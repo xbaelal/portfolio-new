@@ -1,0 +1,45 @@
+.project_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  max-width: 24em;
+  background-color: $white;
+  border-radius: 1.25em;
+  gap: 1em;
+  border: 2px solid $gray-color-1;
+  padding: 1em;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.03);
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  &_img {
+    width: 100%;
+    border-radius: 1.25em;
+    object-fit: cover;
+  }
+  &_content {
+    p {
+      display: -webkit-box;
+      -webkit-line-clamp: 9;
+      line-clamp: 9;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &_links {
+    display: flex;
+    gap: 0.625em;
+    img {
+      width: 1.875em;
+      height: 1.875em;
+      transition: all 0.4s ease-in-out;
+    }
+    :hover {
+      transform: rotateY(360deg);
+    }
+  }
+}

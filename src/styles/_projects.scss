@@ -1,0 +1,26 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25em;
+  &_cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5em;
+  }
+}
+
+.projects_slider {
+  width: 100%;
+  max-width: 100em;
+  margin: 0 auto;
+  .swiper-slide {
+    width: auto;
+    flex-shrink: 0;
+    margin-bottom: 4em;
+  }
+}

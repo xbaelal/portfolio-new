@@ -1,0 +1,28 @@
+.footer {
+  background-color: $blue-color-1;
+  color: $white;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  &_socials {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: center;
+    img {
+      height: 25px;
+      object-fit: cover;
+    }
+    .links {
+      a {
+        display: flex;
+        text-decoration: underline;
+        color: $white;
+        img {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

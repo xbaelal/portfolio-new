@@ -1,0 +1,134 @@
+.hero {
+  color: $gray-color-1;
+
+  &_main {
+    background-color: $blue-color-1;
+  }
+
+  &_upper {
+    .contact_btn {
+      text-align: right;
+      .btn {
+        background-color: $blue-color-2;
+        color: $white;
+        padding: 0.8em 1.5em;
+        margin: 0.8em 1.5em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          background-color: rgba($blue-color-2-rgb, $alpha: 0.7);
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  &_lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10em 0;
+
+    &_content {
+      max-width: 50%;
+      h1 {
+        font-size: 4em;
+        color: $white;
+      }
+      strong {
+        color: $white;
+      }
+    }
+  }
+}
+
+// Modal styles
+.modal_overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+
+  &.closing {
+    animation: fadeOut 0.3s ease;
+  }
+}
+
+.modal {
+  background-color: $blue-color-1;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+
+  &.closing {
+    animation: fadeOut 0.3s ease;
+  }
+
+  .modal_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: $white;
+    color: $blue-color-1;
+
+    h2 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .modal_close {
+      background: none;
+      border: none;
+      color: $blue-color-1;
+      font-size: 1.5em;
+      cursor: pointer;
+    }
+  }
+
+  .modal_body {
+    padding: 1.5em;
+    font-size: 1em;
+    color: $white;
+    p {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
