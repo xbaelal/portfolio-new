@@ -71,10 +71,21 @@ const Skills = () => {
           spaceBetween={80}
           loop={true}
           freeMode={true}
-          // pagination={{
-          //   clickable: true,
-          // }}
           modules={[FreeMode, Pagination]}
+          breakpoints={{
+            320: {
+              slidesPerView: 2.7,
+              spaceBetween: 45,
+            },
+            480: {
+              slidesPerView: 3.5,
+              spaceBetween: 55,
+            },
+            768: {
+              slidesPerView: 4.5,
+              spaceBetween: 65,
+            },
+          }}
           className="skills_slider">
           {skills.map(({ id, title, icon }) => (
             <SwiperSlide key={id}>

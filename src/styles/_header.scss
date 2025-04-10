@@ -19,6 +19,10 @@
         font-size: 1em;
         transition: all 0.3s ease-in-out;
 
+        @media #{$ipadpro} {
+          padding: 0.5em 1em;
+        }
+
         &:hover {
           background-color: rgba($blue-color-2-rgb, $alpha: 0.7);
           transform: scale(1.2);
@@ -33,8 +37,21 @@
     align-items: center;
     padding: 10em 0;
 
+    @media #{$ipadpro} {
+      padding: 8em 4em;
+      gap: 3em;
+    }
+
+    @media #{$mobL} {
+      flex-direction: column;
+      padding: 2em 0;
+    }
+
     &_content {
       max-width: 47%;
+      @media #{$mobL} {
+        max-width: 80%;
+      }
       h1 {
         font-size: 4em;
         color: $white;
@@ -44,6 +61,14 @@
       }
       strong {
         color: $white;
+      }
+      @media #{$ipadpro} {
+        h1 {
+          font-size: 3em;
+        }
+        p {
+          font-size: 1.1em;
+        }
       }
     }
   }

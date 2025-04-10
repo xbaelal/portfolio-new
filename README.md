@@ -26,10 +26,8 @@ Welcome to my **Portfolio Repo**, a personal showcase built using:
 ## 🧠 Features
 
 - 📁 Modular and clean component structure
-- 🌓 Dark mode enabled
 - ✨ Animated UI interactions
 - 📱 Fully responsive design
-- 🔍 SEO-friendly with dynamic meta tags
 - 🧩 Easily customizable content
 
 ---

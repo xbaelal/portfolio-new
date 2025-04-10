@@ -94,6 +94,24 @@ const Projects = () => {
           clickable: true,
         }}
         modules={[FreeMode, Pagination]}
+        breakpoints={{
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+        }}
         className="projects_slider">
         {ProjectsData.map((project, index) => (
           <SwiperSlide key={index}>
