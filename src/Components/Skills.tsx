@@ -85,6 +85,10 @@ const Skills = () => {
               slidesPerView: 4.5,
               spaceBetween: 65,
             },
+            1024: {
+              slidesPerView: 5.7,
+              spaceBetween: 80,
+            },
           }}
           className="skills_slider">
           {skills.map(({ id, title, icon }) => (

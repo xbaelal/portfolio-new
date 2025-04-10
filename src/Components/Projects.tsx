@@ -108,8 +108,8 @@ const Projects = () => {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 4,
-            spaceBetween: 40,
+            slidesPerView: 3,
+            spaceBetween: 30,
           },
         }}
         className="projects_slider">
