@@ -8,12 +8,12 @@
     height: 100%;
     margin: 4em 0;
     @media #{$ipadpro} {
-      padding: 0 2em;
+      // padding: 0 2em;
     }
   }
   &_slider {
     margin: 0 auto;
-    max-width: 55em;
+    // max-width: 55em;
     .icons {
       padding: 1.2em 0;
       background-color: $blue-color-1;

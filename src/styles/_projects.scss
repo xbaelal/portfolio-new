@@ -6,7 +6,7 @@
   justify-content: center;
   gap: 1.25em;
   @media #{$ipadpro} {
-    padding: 0 2em;
+    // padding: 0 2em;
   }
   &_cards {
     display: flex;
@@ -19,7 +19,6 @@
 
 .projects_slider {
   width: 100%;
-  max-width: 100em;
   margin: 0 auto;
   .swiper-slide {
     width: auto;

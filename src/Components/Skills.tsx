@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Pagination } from "swiper/modules";
+import { FreeMode, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
@@ -71,23 +71,32 @@ const Skills = () => {
           spaceBetween={80}
           loop={true}
           freeMode={true}
-          modules={[FreeMode, Pagination]}
+          speed={2500}
+          autoplay={{
+            delay: 0,
+            disableOnInteraction: false,
+          }}
+          modules={[FreeMode, Pagination, Autoplay]}
           breakpoints={{
             320: {
-              slidesPerView: 2.7,
+              slidesPerView: 3.2,
               spaceBetween: 45,
             },
             480: {
-              slidesPerView: 3.5,
+              slidesPerView: 4.2,
               spaceBetween: 55,
             },
             768: {
-              slidesPerView: 4.5,
+              slidesPerView: 5.2,
               spaceBetween: 65,
             },
             1024: {
-              slidesPerView: 5.7,
+              slidesPerView: 7.7,
               spaceBetween: 80,
+            },
+            1440: {
+              slidesPerView: 8.2,
+              spaceBetween: 100,
             },
           }}
           className="skills_slider">

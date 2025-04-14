@@ -96,20 +96,20 @@ const Projects = () => {
         modules={[FreeMode, Pagination]}
         breakpoints={{
           320: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
           480: {
-            slidesPerView: 1,
+            slidesPerView: 1.2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 2,
+            slidesPerView: 2.2,
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 3.7,
+            spaceBetween: 20,
           },
         }}
         className="projects_slider">
