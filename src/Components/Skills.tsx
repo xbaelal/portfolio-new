@@ -65,15 +65,20 @@ const skills = [
 const Skills = () => {
   return (
     <section className="skills" id="skills">
+      <div className="skills_contentWrapper">
+        <h2 className="skills_heading">My Skills</h2>
+        <p className="skills_subheading">I have experience with the following technologies and tools</p>
+      </div>
       <div className="skills__container">
         <Swiper
           slidesPerView={5.7}
           spaceBetween={80}
           loop={true}
           freeMode={true}
-          speed={2500}
+          speed={6000}
+          allowTouchMove={true}
           autoplay={{
-            delay: 0,
+            delay: 1,
             disableOnInteraction: false,
           }}
           modules={[FreeMode, Pagination, Autoplay]}

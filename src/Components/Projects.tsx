@@ -108,7 +108,7 @@ const Projects = () => {
             spaceBetween: 30,
           },
           1024: {
-            slidesPerView: 3.7,
+            slidesPerView: 3.9,
             spaceBetween: 20,
           },
         }}

@@ -60,9 +60,9 @@ const Header = () => {
           <div className="hero_lower_content">
             <h1>Welcome.</h1>
             <p>
-              My name is Bilal Muhammad Ahmed, a <strong>Front-End Developer</strong> based in Karachi, Pakistan. I have
-              worked on a wide range of front-end projects, with a focus on creating clean, well-crafted interfaces that
-              not only look great but also provide a seamless user experience.
+              a <strong>Front-End Developer</strong> based in Karachi, Pakistan. I have worked on a wide range of
+              front-end projects, with a focus on creating clean, well-crafted interfaces that not only look great but
+              also provide a seamless user experience.
             </p>
           </div>
           <div className="hero_img">

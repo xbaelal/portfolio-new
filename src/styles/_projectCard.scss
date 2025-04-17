@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  max-width: 24em;
+  max-width: 26em;
   background-color: $white;
   border-radius: 1.25em;
   gap: 1em;
@@ -23,8 +23,8 @@
   &_content {
     p {
       display: -webkit-box;
-      -webkit-line-clamp: 9;
-      line-clamp: 9;
+      -webkit-line-clamp: 6;
+      line-clamp: 6;
       -webkit-box-orient: vertical;
       overflow: hidden;
       text-overflow: ellipsis;
