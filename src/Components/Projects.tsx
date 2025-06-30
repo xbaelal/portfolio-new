@@ -5,78 +5,47 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
 
+const imgBase = "https://res.cloudinary.com/dadewffae/image/upload/";
+const gitBase = "https://github.com/xbaelal/";
+
 const ProjectsData = [
   {
-    title: "Project One",
+    title: "Todo List App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+      "The Todo List App is a sleek React-based task manager with add, edit, delete, and toggle completion features. It uses Context API for state management and local storage for data persistence. Built with React hooks + Tailwind CSS, it offers a clean, intuitive interface for organizing tasks.",
+    imageUrl: `${imgBase}v1751311630/todo-app_hswrcb.png`,
+    liveUrl: "https://todo-react-baelal.vercel.app/",
+    githubUrl: `${gitBase}Todo-React`,
   },
   {
-    title: "Project Two",
+    title: "MealMancer",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+      "MealMancer is an AI-powered food recommendation app that suggests recipes based on your available ingredients, reducing food waste and meal-planning stress. It features smart recipe generation, real-time error handling, and a pantry-based personalization system for tailored cooking ideas.",
+    imageUrl: `${imgBase}v1751311663/mealMancer_sbl71o.png`,
+    liveUrl: "https://meal-mancer.vercel.app/",
+    githubUrl: `${gitBase}meal-mancer`,
   },
   {
-    title: "Project Three",
+    title: "Movie Database App",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+      "The Movie Database App is a React + TypeScript web application that fetches data from a free movie API to display details about movies and TV shows. Users can explore ratings, genres, and overviews, with dedicated search options for movies, TV shows, and genres for seamless browsing.",
+    imageUrl: `${imgBase}v1751312165/movieDb_ups2nl.png`,
+    liveUrl: "https://themovies-db.vercel.app/",
+    githubUrl: `${gitBase}movie-database-app`,
   },
   {
-    title: "Project One",
+    title: "Ghariyal (E-commerce) Store",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A high-converting Shopify project built for a premium watch store, now live and processing orders. Features premium product showcases, smart collection filtering (by gender, brand, price), High-resolution galleries with zoom functionality, and instant checkout – all optimized for mobile.",
+    imageUrl: `${imgBase}v1751312266/ghariyal_vbsxvh.png`,
+    liveUrl: "ghariyal.pk",
   },
   {
-    title: "Project Two",
+    title: "ZamZam Kitchen",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Project Three",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Project One",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Project Two",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Project Three",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicinrem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus totam magni iure atque nobis molestiae modi commodi pariatur veritatis facilis fugiat, illum error porro minima nisi. Obcaecati accusantium possimus facere voluptate velit impedit consequuntur deleniti? Reprehenderit eligendi quod dicta expedita quidem vero distinctio, nobis iure rerum voluptas nihil vel aliquam.",
-    imageUrl: "/project1.jpg",
-    liveUrl: "#",
-    githubUrl: "#",
+      "A live, responsive website for a traditional catering business, built with React, TypeScript, and SCSS. Designed for a high-end catering client, Features custom interactive Swiper sliders for food showcases, menus, packages, and subtle animations to enhance visual appeal.",
+    imageUrl: `${imgBase}v1751313044/zk_eyvel4.png`,
+    liveUrl: "zamzamkitchen.pk/",
   },
 ];
 
@@ -112,7 +81,8 @@ const Projects = () => {
             spaceBetween: 20,
           },
         }}
-        className="projects_slider">
+        className="projects_slider"
+      >
         {ProjectsData.map((project, index) => (
           <SwiperSlide key={index}>
             <ProjectCard
