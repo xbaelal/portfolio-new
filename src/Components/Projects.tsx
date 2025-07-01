@@ -38,14 +38,14 @@ const ProjectsData = [
     description:
       "A high-converting Shopify project built for a premium watch store, now live and processing orders. Features premium product showcases, smart collection filtering (by gender, brand, price), High-resolution galleries with zoom functionality, and instant checkout – all optimized for mobile.",
     imageUrl: `${imgBase}v1751312266/ghariyal_vbsxvh.png`,
-    liveUrl: "ghariyal.pk",
+    liveUrl: "https://ghariyal.pk",
   },
   {
     title: "ZamZam Kitchen",
     description:
       "A live, responsive website for a traditional catering business, built with React, TypeScript, and SCSS. Designed for a high-end catering client, Features custom interactive Swiper sliders for food showcases, menus, packages, and subtle animations to enhance visual appeal.",
     imageUrl: `${imgBase}v1751313044/zk_eyvel4.png`,
-    liveUrl: "zamzamkitchen.pk/",
+    liveUrl: "https://zamzamkitchen.pk/",
   },
 ];
 
